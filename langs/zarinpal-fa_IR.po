@@ -1,0 +1,191 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Parspal\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-12 17:03+0330\n"
+"PO-Revision-Date: 2012-06-12 17:03+0330\n"
+"Last-Translator: Mostafa Soufo <mst404@gmail.com>\n"
+"Language-Team: WP Bazar <mst404@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: F:\\Program Files\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\parspal\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: F:\\Program Files\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\parspal\n"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:23
+msgid "ParsPal"
+msgstr "پارس‌پال"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:24
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/setting.php:2
+msgid "Parspal Setting"
+msgstr "تنظیمات پارس‌پال"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:25
+msgid "Payments"
+msgstr "پرداختی‌ها"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:32
+msgid "You do not have sufficient permissions to access this page."
+msgstr "شما مجوز کافی برای مشاهده این برگه را ندارید."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:68
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:113
+msgid "Error! No action has been."
+msgstr "خطا! هیچ عملیاتی انجام نشده است."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:72
+msgid "Error! Your port is disabled."
+msgstr "خطا! درگاه شما غیرفعال می‌باشد."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:76
+msgid "Error! Your port is invalid."
+msgstr "خطا! درگاه شما فاقد اعتبار می‌باشد."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:80
+msgid "Error! Your port is blocked."
+msgstr "خطا! درگاه شما مسدود می‌باشد."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:84
+msgid "Error! Your user code or password is incorrect."
+msgstr "خطا! رمز یا کدکاربری شما صحیح نیست."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:88
+msgid "Error! User is inactive."
+msgstr "خطا! کاربر غیرفعال است."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:92
+msgid "Error! IP server is invalid."
+msgstr "خطا! آی‌پی سرور نامعتبر است."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:96
+msgid "Error! Operation fails."
+msgstr "خطا! عملیات با خطا مواجه شد."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:104
+msgid "Error! Please Complate all field."
+msgstr "خطا! لطفا تمامی فیلدها را کامل کنید."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:117
+msgid "Error! Paid the amount requested is not equa."
+msgstr "خطا! مبلغ واريزي با مبلغ درخواستي يكسان نمي باشد."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:121
+msgid "Error! Has already been paid."
+msgstr "خطا! قبلا پرداخت شده است."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:125
+msgid "Error! Receipt number is not acceptable."
+msgstr "خطا! شماره رسيد قابل قبول نيست."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:129
+#, php-format
+msgid "Transaction was successful. <br /> Your tracking number: %s <br /> Payment price : %s <br /> Your Order ID: %s"
+msgstr "تراکنش با موفقیت انجام شد. <br /> شماره پیگیری شما: %s <br /> مبلغ پرداختی تراکنش : %s ریال<br /> شماره سفارش شما: %s"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/parspal.php:136
+#, php-format
+msgid "This form is for registeration users. please <a href=\"%s\">login</a> to site."
+msgstr "این فرم برای کاربران سایت است. لطفا <a href=\"%s\">وارد سایت</a> شوید."
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/setting.php:6
+msgid "General Setting"
+msgstr "تنظیمات عمومی"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/setting.php:8
+msgid "Your Server IP:"
+msgstr "آی‌پی سرور شما:"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/setting.php:11
+msgid "Your Server IP server for the Parspal"
+msgstr "آی‌پی سرور شما برای معرفی به پارس‌پال"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/setting.php:16
+msgid "Merchant ID:"
+msgstr "شناسه درگاه (Merchant ID)"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/setting.php:19
+msgid "Your Merchant ID in the Parspal"
+msgstr "شناسه درگاه (Merchant ID) شما در پارس‌پال"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/setting.php:24
+msgid "Port Password:"
+msgstr "کلمه عبور درگاه:"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/setting.php:27
+msgid "Your Port Password in the Parspal"
+msgstr "کلمه عبور درگاه شما در پارس‌پال"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/inc/form.php:6
+msgid "Your name"
+msgstr "نام شما"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/inc/form.php:14
+msgid "Your email"
+msgstr "پست‌الکترونیک شما"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/inc/form.php:22
+msgid "Your mobile"
+msgstr "موبایل شما"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/inc/form.php:30
+msgid "Price"
+msgstr "مبلغ"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/inc/form.php:34
+msgid "To toman"
+msgstr "به تومان"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/inc/form.php:39
+msgid "Description Payment"
+msgstr "توضیحات پرداخت"
+
+#: F:\Program
+#: Files\xampp\htdocs\wordpress\wp-content\plugins\parspal/inc/form.php:48
+msgid "Submit"
+msgstr "ثبت"
+
+#~ msgid ""
+#~ "Transaction was successful. \\n Your Res Number: %s \\n Payment price : %"
+#~ "s \\n Your Order ID: %s"
+#~ msgstr ""
+#~ "تراکنش با موفقیت انجام شد. \\nشماره رسید شما: %s \\nمبلغ پرداختی: %s "
+#~ "\\nشماره سفارش شما: %s"
+
+#~ msgid "Name"
+#~ msgstr "نام"

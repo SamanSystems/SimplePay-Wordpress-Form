@@ -1,0 +1,64 @@
+.payment-form{
+	font-family: Tahoma;
+	font-size: 11px;
+	background: none repeat scroll 0 0 #EEEEEE;
+	float: right;
+}
+
+.payment-form table{
+	float: right;
+}
+
+.payment-form tr td {
+	padding: 2px;
+	border-bottom:   1px  solid #DDDDDD;
+}
+
+.payment-form .parspal-input{
+	padding: 2px;
+	font-family: Tahoma;
+	font-size: 11px;
+	border: 1px solid #CCCCCC
+}
+
+.payment-form .parspal-submit{
+	padding: 2px;
+	font-family: Tahoma;
+	font-size: 11px;
+	border: 1px solid #CCCCCC;
+	background: #FFFFFF;
+	width: 80px;
+}
+
+.payment-form .parspal-submit:hover{
+	 cursor: pointer;
+	 background: #EEEEEE;
+}
+
+.payment-form .description-require{
+	color: #FF0000
+}
+
+.payment-form .description-field{
+	font-size: 10px;
+}
+
+.error-payment {
+    background: #FFB9B9  none  repeat  scroll 0;
+    font-size: 11px;
+    padding: 5px;
+    border:  1px  solid #FF0000;
+    border-radius: 3px;
+    float: right;
+    color: #CC0000;
+}
+
+.success-payment {
+    background: #B7FFB7  none  repeat  scroll 0;
+    font-size: 11px;
+    padding: 5px;
+    border:   1px  solid #009900;
+    border-radius: 3px;
+    float: right;
+    color: #006600;
+}
