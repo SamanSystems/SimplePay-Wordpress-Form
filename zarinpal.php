@@ -42,7 +42,7 @@ License: GPL2
 
 	function zarinpal_form() {
 
-		if(is_user_logged_in()) {
+		if(true) {
 
 			global $current_user, $zarinpal;
 			include_once('inc/form.php');
