@@ -96,7 +96,7 @@ Class zarinpal {
 	 * Constructors
 	 */
 	public function __construct() {
-		$this->client = new SoapClient($this->WSDL);
+		$this->client = new SoapClient($this->wsdl, array('encoding' => 'UTF-8'));
 	}
 
 	/**
@@ -104,7 +104,6 @@ Class zarinpal {
 	 */
 	public function Request() {
         	$callBackUrl = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-		$this->client = new SoapClient('https://www.zarinpal.com/pg/services/WebGate/wsdl', array('encoding' => 'UTF-8'));
 		$result = $this->client->PaymentRequest(array(
 			'MerchantID' => $this->MerchantID,
 			'Amount' => $this->Price,
@@ -112,8 +111,7 @@ Class zarinpal {
 			'CallbackURL' => $callBackUrl
 		));
 		if ($result->Status == 100) {
-			$payPath = 'https://www.zarinpal.com/pg/StartPay/'. $result->Authority;
-			echo '<meta http-equiv="Refresh" content="0;URL=' . $PayPath . '">';
+			echo '<meta http-equiv="Refresh" content="0;URL=https://www.zarinpal.com/pg/StartPay/' . $result->Authority . '">';
 		} else {
 			return $result->Status; 
 		}
