@@ -15,7 +15,7 @@ Class zarinpal {
 	 *
 	 * @var string
 	 */
-	private $WSDL = "http://www.zarinpal.com/WebserviceGateway/wsdl";
+	private $wsdl = 'https://www.zarinpal.com/pg/services/WebGate/wsdl';
 
 	/**
 	 * Soap Client
@@ -103,39 +103,37 @@ Class zarinpal {
 	 * Request for payment transactions
 	 */
 	public function Request() {
-        $callBackUrl = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-
-
-		$client = new SoapClient('http://www.zarinpal.com/WebserviceGateway/wsdl', array('encoding'=>'UTF-8'));
-		$res = $client->PaymentRequest($this->MerchantID,  $this->Price, $callBackUrl, urlencode($this->Description) );
-		$PayPath =  'https://www.zarinpal.com/users/pay_invoice/'.$res;
-		$Status = $res;
-		if(strlen($Status) == 36) {
-			//header("Location: $PayPath");
-			echo "<meta http-equiv='Refresh' content='0;URL=$PayPath'>";
+        	$callBackUrl = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+		$this->client = new SoapClient('https://www.zarinpal.com/pg/services/WebGate/wsdl', array('encoding' => 'UTF-8'));
+		$result = $this->client->PaymentRequest(array(
+			'MerchantID' => $this->MerchantID,
+			'Amount' => $this->Price,
+			'Description' => $this->Description,
+			'CallbackURL' => $callBackUrl
+		));
+		if ($result->Status == 100) {
+			$payPath = 'https://www.zarinpal.com/pg/StartPay/'. $result->Authority;
+			echo '<meta http-equiv="Refresh" content="0;URL=' . $PayPath . '">';
 		} else {
-			return $Status; 
+			return $result->Status; 
 		}
-
 	}
 
 	/**
 	 * Verify Payment
 	 */
 	public function Verify() {
-
-		if(isset($_GET['au']) && strlen($_GET['au']) == 36 ) {
-
-			$au = $_GET['au'];
-			$this->RefNumber = $_GET['refid'];
-			$this->ResNumber = $_GET['resnumber'];
-            $client = new SoapClient('http://www.zarinpal.com/WebserviceGateway/wsdl', array('encoding'=>'UTF-8'));
-	        $res = $client->PaymentVerification($this->MerchantID, $au, $this->Price);
-			$Status = $res;
-			//$this->PayPrice = $res;
-			$eemail = $this->Email;
-			return $Status;
-
+		if ($_GET['Status'] == 'OK') {
+			$res = $this->client->PaymentVerification(array(
+				'MerchantID'	=> $this->MerchantID,
+				'Authority' 	=> $_GET['Authority'],
+				'Amount'	=> $this->Price
+			));
+			if ($res->Status == 100) {
+				$this->RefNumber = $_GET['Authority'];
+				$this->ResNumber = $result->RefID;
+			}
+			return $res->Status;
 		}
 	}
 }
