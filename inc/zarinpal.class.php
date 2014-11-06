@@ -126,7 +126,7 @@ Class zarinpal {
 			$res = $this->client->PaymentVerification(array(
 				'MerchantID'	=> $this->MerchantID,
 				'Authority' 	=> $_GET['Authority'],
-				'Amount'	=> $this->Price
+				'Amount'	=> $_GET['Amount']
 			));
 			if ($res->Status == 100) {
 				$this->RefNumber = $_GET['Authority'];
