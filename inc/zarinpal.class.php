@@ -103,12 +103,13 @@ Class zarinpal {
 	 * Request for payment transactions
 	 */
 	public function Request() {
-        	$callBackUrl = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 		$result = $this->client->PaymentRequest(array(
 			'MerchantID' => $this->MerchantID,
 			'Amount' => $this->Price,
 			'Description' => $this->Description,
-			'CallbackURL' => $callBackUrl
+			'Email' => $this->Email,
+			'Mobile' => $this->Mobile,
+			'CallbackURL' => $this->ReturnPath
 		));
 		if ($result->Status == 100) {
 			echo '<meta http-equiv="Refresh" content="0;URL=https://www.zarinpal.com/pg/StartPay/' . $result->Authority . '">';
